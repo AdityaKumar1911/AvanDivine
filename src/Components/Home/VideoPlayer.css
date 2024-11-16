@@ -1,0 +1,37 @@
+.big-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.big-play-button svg {
+    width: 50%;
+    height: auto;
+    fill: white;
+}
+
+.top-header-content {
+    margin-top: 6%;
+}
+
+.big-play-button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .big-play-button {
+        width: 85px;
+        height: 85px;
+    }
+}

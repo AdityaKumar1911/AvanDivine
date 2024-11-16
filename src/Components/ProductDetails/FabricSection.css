@@ -1,0 +1,73 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #fff4d9;
+    /* padding: 20px; */
+    /* max-height: 500px; Set maximum height for the entire section */
+    overflow: hidden; /* Ensure content does not overflow */
+  }
+  
+  .text-content {
+    width: 50%;
+    padding-right: 20px;
+    overflow: auto; /* Allow scrolling if text content overflows */
+  }
+  
+  .text-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: "Futura Regular", sans-serif;
+  }
+  
+  .text-content h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Futura Regular", sans-serif;
+  }
+  
+  .text-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: "Futura Regular", sans-serif;
+  }
+  
+  .image-content {
+    width: 50%;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Ensure image height does not exceed section height */
+    object-fit: cover;
+  }
+  
+  .image-fit {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Ensure image height does not exceed section height */
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 1600px) {
+    .image-fit {
+      width: 899.9820003599928px;
+    }
+  }
+  
+  @media screen and (min-width: 750px) {
+    .image-fit {
+      width: calc((100vw - 10rem) / 1.667);
+    }
+  }
+  
+  @media screen and (max-width: 749px) {
+    .image-fit {
+      width: calc((100vw - 3rem) / 1.667);
+    }
+  }
+  

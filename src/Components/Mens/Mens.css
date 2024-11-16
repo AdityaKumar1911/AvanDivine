@@ -1,0 +1,60 @@
+
+
+.trendsetters-box1 {
+  padding-left: 110px;
+  padding-right: 110px;
+  overflow: hidden; /* Ensure the overflow is hidden */
+}
+
+.trendsetters-image1 {
+  height: 100%;
+  width: 100%;
+  transition: transform 1s ease, filter 0.3s ease; /* Added transition properties */
+}
+
+.trendsetters-image1:hover {
+  transform: scale(1.03); /* Slightly enlarge the image on hover */
+  filter: brightness(1.1); /* Increase brightness on hover */
+}
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;
+  width: 100%; */
+  overflow: hidden;
+}
+
+
+.slider-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+
+    .card-amount {
+       color: #000 !important;
+       text-align: center;
+    }
+
+@media only screen and (max-width: 768px) {
+  .add2cart-btn {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px;
+    width: 81%;
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .trendsetters-box1 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

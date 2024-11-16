@@ -1,0 +1,64 @@
+/* GuaranteesSlider.css */
+.section--divider {
+    /* background-color: #fdf6e4; */
+    padding: 40px 0;
+  }
+  
+  .page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .guarantees {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 22vw; /* Adjust gap for better spacing */
+  }
+  
+  .grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .guarantee__item {
+    text-align: center;
+  }
+  
+  .guarantee-icon--large {
+    width: 40px; /* Adjusted size */
+    height: 40px; /* Adjusted size */
+    margin-bottom: 10px; /* Add margin for spacing between icon and text */
+  }
+  
+  .guarantee__icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .rte {
+    margin-top: 10px;
+  }
+  
+  .rte p {
+    font-family: "Futura Regular", sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+@media only screen and (max-width: 768px) {
+  .grid {
+    gap: 13vw; /* Adjust gap for better spacing */
+  }
+  
+
+}

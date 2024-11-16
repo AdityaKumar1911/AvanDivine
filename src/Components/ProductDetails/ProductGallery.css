@@ -1,0 +1,110 @@
+.product-gallery {
+  padding: 20px;
+  text-align: center;
+  color: black !important;
+  margin-bottom: -20px;
+}
+
+.product-gallery-title{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Futura Regular", sans-serif;
+}
+
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product-detail {
+    width: calc(25% - 10px); /* Should match .product-card width */
+    text-align: center;
+  }
+  
+  
+  .product-cards {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+  }
+  
+  .product-card {
+    flex: 1 0 21%; /* Adjust the width as needed */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .product-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .product-title {
+    font-size: 14px;
+    font-family: "Futura Regular", sans-serif;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    font-size: 14px;
+    color: black !important;
+    font-family: "Futura Regular", sans-serif;
+    margin-bottom: 50px;
+
+  }
+  
+  .discover-more {
+    font-size: 14px;
+    font-family: "Futura Regular", sans-serif;
+    color: black !important;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .discover-more::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease;
+  }
+  
+  .discover-more:hover::after {
+    width: 100%;
+  }
+  
+  .discover-more::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s ease;
+  }
+  
+  .discover-more:hover::before {
+    width: 100%;
+  }

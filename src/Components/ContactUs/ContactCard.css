@@ -1,0 +1,146 @@
+/* src/ContactCard.css */
+.contact-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 71px;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-section {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+    gap: 10px;
+}
+
+.card-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+}
+
+.icon {
+    font-size: 24px;
+    color: #555;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h3 {
+    font-family: "Futura Regular", sans-serif;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-family: "Futura Regular", sans-serif;
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-section {
+        flex-basis: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-card-container {
+        padding: 10px;
+    }
+
+    .card-section {
+        flex-basis: 100%;
+        padding: 15px;
+    }
+
+    .icon-container {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .card-content h3 {
+        font-size: 16px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card-container {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .contact-card {
+        gap: 10px;
+        display: flow-root;
+    }
+
+    .card-section {
+        padding: 10px;
+    }
+
+    .icon-container {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .card-content h3 {
+        font-size: 14px;
+    }
+
+    .card-content p {
+        font-size: 12px;
+    }
+}

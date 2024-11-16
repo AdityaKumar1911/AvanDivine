@@ -1,0 +1,394 @@
+@font-face {
+  font-family: LouisVuitton-Medium;
+  src: url(./../../Font/LouisVuitton-Medium.woff2);
+}
+
+@font-face {
+  font-family: LouisVuitton-Regular;
+  src: url(./../../Font/LouisVuitton-Regular.woff2);
+}
+@font-face {
+  font-family: Futura Regular;
+  src: url(./../../Font/FUTURA55REGULAR.TTF);
+}
+@font-face {
+  font-family: Futura-Medium;
+  src: url(./../../Font/FUTURA65MEDIUM.TTF);
+}
+#overlay-font {
+  font-family: Futura-Medium;
+
+  /* src: url(./../../Font/futura\ medium\ bt.ttf); */
+  font-size: 35px;
+}
+#overlay-font2 {
+  font-family: Futura-Medium;
+
+  /* src: url(./../../Font/futura\ medium\ bt.ttf); */
+  font-size: 20px;
+}
+#boldstatement-text {
+  font-family: Futura-Medium;
+  font-size: 35px;
+}
+.home-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-image {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;
+  width: 100%; */
+  overflow: hidden;
+  controls: none;
+}
+.video-wrapper-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  controls: none;
+}
+
+.slider-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 1s ease, filter 0.3s ease; /* Added transition properties */
+  controls: none;
+}
+.slider-video1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  transition: transform 1s ease, filter 0.3s ease; /* Added transition properties */
+  controls: none;
+}
+
+.img-poster {
+  margin-left: -12px;
+  width: 100%;
+  height: 90%;
+}
+
+.text-overlay {
+  position: absolute;
+  font-family: "FuturaRegular", sans-serif;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+}
+
+.card-title {
+  /* text-align: left; */
+  font-family: Futura Regular;
+  /* font-weight: 1; */
+  text-align: center;
+  /* padding: 18px; */
+  margin-top: 5px;
+  /* margin-left: 4px; */
+  /* margin-left: 4px; */
+  /* margin-left: 4px; */
+  font-size: 25px;
+  /* letter-spacing: 0.6px; */
+  color: black !important;
+}
+
+.card-amount {
+  margin-left: 4px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.trendsetters-box {
+  padding-left: 110px;
+  padding-right: 110px;
+  overflow: hidden; /* Ensure the overflow is hidden */
+}
+
+.trendsetters-image {
+  height: 100%;
+  width: 100%;
+  transition: transform 1s ease, filter 0.3s ease; /* Added transition properties */
+}
+
+.trendsetters-image:hover {
+  transform: scale(1.03); /* Slightly enlarge the image on hover */
+  filter: brightness(1.1); /* Increase brightness on hover */
+}
+
+.discover-more {
+  font-size: 14px;
+  font-family: "Futura Regular", sans-serif;
+  color: black;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  position: relative;
+}
+
+.discover-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s ease;
+}
+
+.discover-more:hover::after {
+  width: 100%;
+}
+
+.discover-more::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s ease;
+}
+
+.discover-more:hover::before {
+  width: 100%;
+}
+
+/* second video */
+.video-container {
+  width: 100%;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 8px 20px rgba(black, 0.4);
+
+  video {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+}
+
+.play-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+
+  #circle-play-b {
+    cursor: pointer;
+    pointer-events: auto;
+
+    svg {
+      width: 100px;
+      height: 100px;
+      fill: #fff;
+      stroke: #fff;
+      cursor: pointer;
+      background-color: rgba(black, 0.2);
+      border-radius: 50%;
+      opacity: 0.9;
+    }
+  }
+}
+
+/* poster text */
+.poster-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.exclusive-text {
+  font-family: "Futura Regular", sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.bold--text {
+  font-family: "Futura Regular", sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.bold--text2 {
+  font-family: "Futura Regular", sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.modern--class {
+  font-family: Futura-Medium;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 7vh;
+  /* margin-bottom: -18px; */
+}
+.bold--text1 {
+  font-family: "Futura Regular", sans-serif;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text-center-discover {
+  margin-bottom: 50px;
+  text-align: center !important;
+}
+.font--text {
+  font-family: "Futura Regular", sans-serif;
+  letter-spacing: 0.4px;
+  /* margin-bottom: -20px; */
+}
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    height: 70vh;
+    overflow: hidden;
+  }
+
+  .video-wrapper-slider {
+    height: 70vh;
+  }
+
+  .font--text {
+    font-family: "Futura Regular", sans-serif;
+    letter-spacing: 0.4px;
+    margin-bottom: 10px;
+  }
+  .bold--text2 {
+    font-family: "Futura Regular", sans-serif;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -30px;
+  }
+
+  .slider-image {
+    height: 68vh;
+    width: 100%;
+    margin-top: 81px;
+  }
+  .trendsetters-box {
+    padding-left: 0px;
+    overflow: hidden;
+    padding-right: 0px;
+  }
+  .modern--class {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .img-poster {
+    width: 100%;
+    height: 90%;
+  }
+  .bold--text1 {
+    font-family: "Futura Regular", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+.temp-image {
+  height: 100vh;
+  width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.temp-image1 {
+  height: 100vh;
+  width: 100%;
+  margin-top: 37px;
+  overflow: hidden;
+}
+
+/* @media (max-width: 1024px) {
+  .temp-image{
+    height: fit-content;
+    width: 100%;
+  }
+  .home-container {
+    height: fit-content;
+  }
+} */
+.input-text {
+  font-family: "Futura Regular", sans-serif;
+}
+
+.mobile-video-2,
+.mobile-video-3 {
+  display: none;
+}
+
+/* Show desktop video by default */
+.desktop-video-2,
+.desktop-video-3 {
+  display: block;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  /* Show mobile video on mobile */
+  .mobile-video-2,
+  .mobile-video-3 {
+    display: block;
+  }
+
+  /* Hide desktop video on mobile */
+  .desktop-video-2,
+  .desktop-video-3 {
+    display: none;
+  }
+}

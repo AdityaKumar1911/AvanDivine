@@ -1,0 +1,95 @@
+/* #shopify-section-template--21542574719264__scrolling-promotion {
+    --section-padding-top: 40px;
+    --section-padding-bottom: 28px;
+    --color-icon: 47, 47, 14;
+    --gradient-background: #fdf4d8;
+    --color-background: 253, 244, 216;
+    --color-foreground: 47, 47, 14;
+    --color-link: var(--color-foreground);
+  }
+  
+  .section {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+    background: var(--gradient-background);
+  }
+  
+  .scrolling-promotion {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll var(--duration) linear infinite;
+  }
+  
+  .promotion {
+    display: flex;
+  }
+  
+  .promotion__item {
+    margin-right: 20px;
+  }
+  
+  .heading {
+    font-size: var(--font-size);
+    color: rgb(var(--color-foreground));
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+   */
+   #shopify-section-template--21542574719264__scrolling-promotion {
+  --section-padding-top: 40px;
+  --section-padding-bottom: 28px;
+  --color-icon: 47, 47, 14;
+  --gradient-background: #fdf4d8;
+  --color-background: 253, 244, 216;
+  --color-foreground: 47, 47, 14;
+  --color-link: var(--color-foreground);
+  overflow: hidden;
+}
+
+.section-wrapper {
+  background: var(--gradient-background);
+  width: 100vw; /* Full width of the viewport */
+  background-color: #fdf4d8;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 20px;
+}
+
+.section {
+  padding-top: var(--section-padding-top);
+  padding-bottom: var(--section-padding-bottom);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.scrolling-promotion {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll var(--duration) linear infinite;
+}
+
+.promotion {
+  display: flex;
+}
+
+.promotion__item {
+  margin-right: 20px;
+}
+
+.heading {
+  font-size: var(--font-size);
+  color: rgb(var(--color-foreground));
+}
+
+@keyframes scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}

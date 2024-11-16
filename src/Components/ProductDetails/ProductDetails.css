@@ -1,0 +1,307 @@
+.product-img {
+    width: 100%;
+
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 28px;
+}
+
+.quantity-controls .quantity-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.quantity-controls .quantity {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+
+.image-container {
+    height: 211vh;
+    overflow-y: scroll;
+    margin-top: 35px;
+}
+
+.image-container::-webkit-scrollbar {
+    display: none;
+}
+
+.image-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.details-container {
+    position: sticky;
+    font-family: "Futura Regular", sans-serif;
+    top: 90px;
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: .06rem;
+}
+
+.product-amount {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: "Futura Regular", sans-serif;
+    letter-spacing: .06rem;
+    margin-left: 20px;
+    color: black;
+}
+
+.discount-amount {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Futura Regular", sans-serif;
+    letter-spacing: 0.06rem;
+    display: inline-block;
+    color: #585858;
+}
+
+.discount-amount::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #585858;
+    transform: rotate(-15deg);
+}
+
+
+.details-tab {
+    margin-top: -9px;
+}
+
+.size-box {
+    display: flex;
+}
+
+.size {
+    display: flex;
+    font-family: "Futura Regular", sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 45px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.size:hover {
+    border: 2px solid black;
+}
+
+
+.size-guide {
+    letter-spacing: 0.20rem;
+    color: black;
+    font-size: 15px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.size-guide-icon {
+    margin-right: 15px;
+    font-size: 17px;
+    color: grey;
+}
+
+.size-guide::after {
+    content: '';
+    margin-left: 29px;
+    position: absolute;
+    bottom: -4px;
+    width: 16%;
+    height: 0.8px;
+    background-color: grey;
+    transition: background-color 0.3s;
+}
+
+.size-guide:hover::after {
+    background-color: black;
+}
+
+
+
+
+.size.selected {
+    border-color: black;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+
+.size-chart {
+    display: flex;
+    justify-content: center;
+    font-family: "Futura Regular", sans-serif;
+    align-items: center;
+    height: 30px;
+    width: 95px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-row {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 20px;
+}
+
+
+.cart-btn {
+    background-color: #ffffff;
+    border: 1px solid black;
+    font-family: "Futura Regular", sans-serif;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 83%;
+    justify-content: start;
+    margin-top: 30px;
+}
+
+.buynow-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Futura Regular", sans-serif;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-description {
+    font-family: "Futura Regular", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.description-title {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+
+.breadcrumb-divider {
+    border-bottom: 0.09rem solid #D3D3D3;
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 767px) {
+    .image-container {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .image-container img {
+        flex: 0 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .details-container {
+        max-height: none;
+    }
+
+    .cart-buy-btn {
+        width: 100vw;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Add this to your existing ProductDetails.css */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .popup-content p {
+    margin-bottom: 10px;
+  }
+  
+  .popup-image {
+    max-width: 100%;
+    border-radius: 23px;
+    height: auto;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .size-guide {
+    cursor: pointer;
+  }
+  

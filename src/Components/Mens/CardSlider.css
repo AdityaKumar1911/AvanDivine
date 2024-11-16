@@ -1,0 +1,30 @@
+/* CardSlider.css */
+.slider-card {
+    padding: 0 10px;
+  }
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .trendsetters-image {
+    width: 100%;
+    height: auto;
+  }
+  .card-title1 {
+    font-family: "Futura Regular", sans-serif;
+    text-align: center;
+    color: #000 !important;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15vh
+  }
+  .slick-prev:before, .slick-next:before {
+    color: rgb(255, 255, 255); /* Customize the arrow color as needed */
+  }
+
+  @media (max-width: 768px) {
+    .slider-card {
+      padding: 0%;
+    }
+    
+  }
